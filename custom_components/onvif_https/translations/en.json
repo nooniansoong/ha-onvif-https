@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ONVIF over HTTPS",
+        "description": "Connects to an ONVIF device that serves ONVIF only over HTTPS (e.g. TLS multiplexed on port 80) and exposes its events.",
+        "data": {
+          "host": "Host / IP",
+          "port": "Port (TLS)",
+          "username": "ONVIF username",
+          "password": "ONVIF password",
+          "verify_ssl": "Verify TLS certificate",
+          "off_delay": "Auto-off delay (seconds)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Username or password rejected by the device.",
+      "cannot_connect": "Could not reach the ONVIF device over HTTPS on that host/port."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  }
+}
